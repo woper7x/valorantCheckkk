@@ -25,7 +25,7 @@ class loop_store(commands.Cog):
     async def on_ready(self):
         print(f'-{self.__class__.__name__}')
     
-    @tasks.loop(time=time(hour=13, minute=25, second=30)) #gmt time 00:00:30
+    @tasks.loop(time=time(hour=13, minute=29, second=30)) #gmt time 00:00:30
     # @tasks.loop(seconds=10) # for test 
     async def valorant_loop(self):
         CHANNEL_LOOP = os.getenv('CHANNEL_ID', None)
